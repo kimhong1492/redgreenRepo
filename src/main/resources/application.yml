@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://20.41.122.182:5432/redgreen_db
+    driver-class-name: org.postgresql.Driver
+    username: redgreen
+    password: 1111
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
