@@ -18,6 +18,8 @@ import java.util.List;
 @Controller
 public class BlogViewController {
     private final BlogService blogService;
+
+    // 파일 저장
     @GetMapping("/articles")
     public String getArticles(Model model) {
         List<ArticleListViewResponse> articles = blogService.findAll().stream()

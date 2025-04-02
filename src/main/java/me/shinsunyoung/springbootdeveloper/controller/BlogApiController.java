@@ -16,6 +16,8 @@ import java.util.List;
 @RestController
 public class BlogApiController {
     private final BlogService blogService;
+
+    //테스트
     @PostMapping("/api/articles")
     public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request) {
         Article savedArticle = blogService.save(request);
